@@ -1,0 +1,188 @@
+/* Pantalla de PC de Escritorio: a partir de 992px */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top-paragraph {
+    margin: 50px 300px;
+}
+
+
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#header-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#header-menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: violet;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+section {
+    text-align: center;
+}
+
+.clothing-and-dresses-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    /* width: calc((100%-2*10px)/3); */
+}
+
+.clothing-and-dresses-card-image-container {
+    width: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.clothing-and-dresses-card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Section 3: Tables */
+.size-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: beige;
+}
+
+.size-table th,
+.size-table td {
+    border: 1px solid blanchedalmond;
+    padding: 12px;
+    text-align: center;
+}
+
+.size-table th {
+    background-color: rosybrown;
+    color: burlywood;
+}
+
+/* Section 4: Lists & Flexible Content */
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;
+    background-color: violet;
+}
+
+.steps-article,
+.benefits-aside {
+    flex: 1;
+    padding: 20px;
+}
+
+.shopping-list,
+.benefits-list {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.shopping-list li,
+.benefits-list li {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.site-footer a {
+    color: rosybrown;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Tablet: más pequeño de 992px */
+/* Debes tener en cuenta los estilos añadidos para PC anteriormente */
+@media screen and (max-width: 992px) {
+    #header-menu {
+        display: none;
+    }
+
+    #top-paragraph {
+        margin: 50px 100px;
+    }
+
+    .clothing-and-dresses-card-image-container {
+        width: 300px;
+        border: 2px solid black;
+    }
+
+}
+
+/* Móvil: más pequeño de 768px */
+/* Debes tener en cuenta los estilos añadidos anteriormente para PC
+ y también los que incluiste para Tablet anteriormente */
+@media screen and (max-width: 768px) {
+    #header-icons {
+        display: none;
+    }
+
+    #top-paragraph {
+        margin: 50px 100px;
+    }
+}
